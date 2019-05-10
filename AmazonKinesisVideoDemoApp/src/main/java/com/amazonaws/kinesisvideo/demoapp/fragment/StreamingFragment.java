@@ -62,7 +62,7 @@ public class StreamingFragment extends Fragment implements TextureView.SurfaceTe
         try {
             mKinesisVideoClient = KinesisVideoAndroidClientFactory.createKinesisVideoClient(
                     getActivity(),
-                    KinesisVideoDemoApp.KINESIS_VIDEO_REGION,
+                    KinesisVideoDemoApp.US_EAST_1,
                     KinesisVideoDemoApp.getCredentialsProvider());
 
             mCameraMediaSource = (AndroidCameraMediaSource) mKinesisVideoClient
